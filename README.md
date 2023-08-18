@@ -202,3 +202,6 @@ docker-compose down
 
 #### What are the assumptions you made?
 - Implemented within the system is a single-key encryption mechanism, based on the assumption that each user_id is associated with a unique mapping of ip and device_id. The retrieved data adheres to the database schema's data type. The system is designed to operate with a dependable and persistent connection.
+
+#### Additional Information:
+- I have chosen Fernet Symmetric Encryption as the cornerstone of our data protection strategy, specifically tailored for safeguarding sensitive PII. Its robust security foundation rests upon cutting-edge encryption algorithms and HMAC authentication, ensuring data confidentiality and integrity. Importantly, Fernet offers the ability to seamlessly decrypt encrypted data, restoring it to its original state when required.
