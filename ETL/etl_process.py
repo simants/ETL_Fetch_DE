@@ -25,6 +25,7 @@ def decrypt_data(data):
     :param data: Encrypted data.
     :return: Decrypted data
     """
+    # This function will decrypt the encrypted data.
     byte_data = data.encode()
     decrypted_data = cipher_suite.decrypt(byte_data)
     return decrypted_data.decode()
